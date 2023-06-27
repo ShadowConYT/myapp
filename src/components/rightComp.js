@@ -14,6 +14,15 @@ const RightComp = () => {
                 <img width={'50px'} height={'50px'} style={{marginRight:'50px', borderRadius:'15px' }} src={Akaza} />
             </div>
         </div>
+        <div id='statistics' style={{backgroundColor:'white'}}>
+            <h1 style={{fontSize:'1em',marginBottom:'0px'}}>Upcoming Hours</h1>
+
+            <select name ='Rain Precipitation' id ='Rain Precipitation' class = 'Rain Precipitation' style = {{color: '#006699',fontFamily:'Arial',fontSize: '12px',fontStyle: 'normal',backgroundColor: '#FFFFFF',padding: "2px"}}>
+            <option value = "#">Rain Precipitation 1</option>
+            <option value = "#">Rain Precipitation 2</option>
+            </select>
+
+        </div>
     </div>
   )
 }
