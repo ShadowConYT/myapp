@@ -5,6 +5,7 @@ import Graph from './Graph';
 import {Stack,Box,Grid} from '@mui/material';
 import Cloud from '../assests/Cloud.png';
 import Sunblack from '../assests/Sunblack.png';
+import RightbottomCard from './RightbottomCard';
 import '../App.css';
 const RightComp = () => {
   return (
@@ -67,6 +68,10 @@ const RightComp = () => {
             <Stack display="flex" marginLeft={'40px'} marginTop={'15px'}>
                 <Graph/>
             </Stack>
+        </Box>
+
+        <Box>
+            <RightbottomCard/>
         </Box>
     </div>
   )
