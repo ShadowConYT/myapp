@@ -1,60 +1,60 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '@canvasjs/react-charts';
 
+ 
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
- 
-class Graph extends Component {	
+class Graph extends Component {
 	render() {
 		const options = {
-			animationEnabled: true,
 			theme: "light2",
-			title:{
+			animationEnabled: true,
+			exportEnabled: false,
+			title: {
 				text: ""
 			},
 			axisX:{
-				valueFormatString: "DD MMM",
-				crosshair: {
-					enabled: true,
-					snapToDataPoint: true
-				}
+				lineThickness:1,
+				gridThickness:1
+
 			},
 			axisY: {
 				title: "",
-				valueFormatString: "€##0.00",
-				crosshair: {
-					enabled: true,
-					snapToDataPoint: true,
-					labelFormatter: function(e) {
-						return "€" + CanvasJS.formatNumber(e.value, "##0.00");
-					}
-				}
+				lineThickness: 0,
+  				gridThickness: 0,
+  				tickLength: 0,
+  				labelFormatter: function(e) {
+  	    		return "";}
+				
 			},
-			data: [{
+			height:100,
+			width:925,
+			data: [
+			{
+				color:'#5c9ce5',
 				type: "area",
-				xValueFormatString: "DD MMM",
 				dataPoints: [
-				  { x: new Date('23%'), y: ''},
-				  { x: '29%', y: ''},
-				  { x: '58%', y: ''},
-				  { x: '75%', y: ''},
-				  { x: '33%', y: ''},
-				  { x: '20%', y: ''},
-				  { x: '73%', y: ''},
-				  { x: '49%', y: ''}
+					{ x: 1, y: 27,label:23},
+					{ x: 2, y: 28 ,label:29},
+					{ x: 3, y: 28,label:58},
+					{ x: 4, y: 29,label:75},
+					{ x: 5, y: 30,label:33},
+					{ x: 6, y: 29,label:20},
+					{ x: 7, y: 29,label:73},
+					{x:  8,y:28,label:49}
 				]
-			}]
+			}
+			]
 		}
-		
-		return (
+		return ( 
 		<div>
-			<CanvasJSChart options = {options} 
+			<CanvasJSChart options = {options}
 				/* onRef={ref => this.chart = ref} */
 			/>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
-		</div>
+			</div>
 		);
 	}
 }
- 
+
 export default Graph

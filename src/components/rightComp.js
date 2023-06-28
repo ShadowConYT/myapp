@@ -2,7 +2,9 @@ import React from 'react';
 import More from '../assests/More.png';
 import Akaza from '../assests/Akaza.jpg';
 import Graph from './Graph';
-import {Stack,Box} from '@mui/material';
+import {Stack,Box,Grid} from '@mui/material';
+import Cloud from '../assests/Cloud.png';
+import Sunblack from '../assests/Sunblack.png';
 import '../App.css';
 const RightComp = () => {
   return (
@@ -14,47 +16,57 @@ const RightComp = () => {
             </div>
             <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>  
                 <img width={'25px'} height={'30px'} style={{padding:'0 25px 0 25px'}} src={More}/>
-                <img width={'50px'} height={'50px'} style={{marginRight:'50px', borderRadius:'15px' }} src={Akaza} />
+                <img width={'50px'} height={'50px'} style={{marginRight:'65px', borderRadius:'15px' }} src={Akaza} />
             </div>
         </div>
-        <Box style={{backgroundColor:'white',justifyContent:'center',alignItems:'center',margin:'20px 25px 0px 25px'}}>
-            <Stack id='statistics' direction={'row'} style={{backgroundColor:'white',width:'90%',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
-                <h1 style={{fontSize:'1em',marginBottom:'0px',marginTop:'2%',marginLeft:'3%'}}>Upcoming Hours</h1>
-                <div style={{marginTop:'2%',marginLeft:'3%'}}>
-                    <select name ='Rain Precipitation' id ='Rain Precipitation' class = 'Rain Precipitation' style = {{color: '#a7a7a7',fontWeight:'600',fontFamily:'Arial',fontSize: '12px',marginRight:'25px',fontStyle: 'normal',border:'2px solid #f1f1f1',borderRadius:'5px',backgroundColor: '#F1f1f1',padding: "2px"}}>
+        <Box style={{width:'90%',backgroundColor:'white',justifyContent:'center',alignItems:'center',margin:'20px 25px 20px 55px',borderRadius:'40px'}}>
+            <Stack id='statistics' direction={'row'} style={{width:'90%',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+                <h1 style={{background:'none',fontSize:'1em',marginBottom:'0px',marginTop:'2%',marginLeft:'7%'}}>Upcoming Hours</h1>
+                <div style={{marginTop:'2%',marginLeft:'9%'}}>
+                    <select name ='Rain Precipitation' id ='Rain Precipitation' class = 'Rain Precipitation' style = {{color: '#a7a7a7',fontWeight:'600',fontFamily:'Arial',fontSize: '12px',marginRight:'20px',fontStyle: 'normal',border:'2px solid #f1f1f1',borderRadius:'5px',backgroundColor: '#F1f1f1',padding: "2px"}}>
                     <option value = "#">Rain Precipitation 1</option>
                     <option value = "#">Rain Precipitation 2</option>
                     </select>
                     
-                    <select name ='Next Day' id ='Next Day' class = 'Next Day' style = {{color: '#000000',marginRight:'30px',fontFamily:'Arial',fontWeight:'600',fontSize: '12px',fontStyle: 'normal',backgroundColor: '#F1f1f1',border:'2px solid #f1f1f1',borderRadius:'5px',padding: "2px"}}>
+                    <select name ='Next Day' id ='Next Day' class = 'Next Day' style = {{color: '#000000',marginRight:'3px',fontFamily:'Arial',fontWeight:'600',fontSize: '12px',fontStyle: 'normal',backgroundColor: '#F1f1f1',border:'2px solid #f1f1f1',borderRadius:'5px',padding: "2px"}}>
                     <option value = "#">Next Day</option>
                     <option value = "#">Yesterday</option>
                     </select>
                 </div>
             </Stack>
-            <Box>
-            <table class="charts-css area" id="my-chart">
-
-                <tbody>
-                <tr>
-                    <td style={{start:"0.2", size: "0.4"}}> <span class="data"> $ 40K </span> </td>
-                </tr>
-                <tr>
-                    <td style={{start: 0.4, size: 0.8}}> <span class="data"> $ 80K </span> </td>
-                </tr>
-                <tr>
-                    <td style={{start: 0.8, size: 0.6}}> <span class="data"> $ 60K </span> </td>
-                </tr>
-                <tr>
-                    <td style={{start: 0.6, size: 1.0}}> <span class="data"> $ 100K </span> </td>
-                </tr>
-                <tr>
-                    <td style={{start: '1.0', size: '0.3'}}> <span class="data"> $ 30K </span> </td>
-                </tr>
-                </tbody>
-
-            </table>
-            </Box>
+            <Stack direction={'row'} style={{justifyContent:'space-evenly',marginBottom:'10px',marginTop:'25px'}}>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>Now</span>
+                <span style={{fontFamily:'arial',fontSize:'12px'}}>11:00</span>
+                <span style={{fontFamily:'arial',fontSize:'12px'}}>12:00</span>
+                <span style={{fontFamily:'arial',fontSize:'12px'}}>13:00</span>
+                <span style={{fontFamily:'arial',fontSize:'12px'}}>14:00</span>
+                <span style={{fontFamily:'arial',fontSize:'12px'}}>15:00</span>
+                <span style={{fontFamily:'arial',fontSize:'12px'}}>16:00</span>
+                <span style={{fontFamily:'arial',fontSize:'12px'}}>17:00</span>
+            </Stack>
+            <Stack direction={'row'} style={{justifyContent:'space-evenly',}}>
+                <img alt="" id='1' width={'25px'} src={Sunblack} />
+                <img alt="" id='2' width={'25px'} src={Sunblack} />
+                <img alt="" id='3' width={'25px'} src={Cloud} />
+                <img alt="" id='4' width={'25px'} src={Cloud} />
+                <img alt="" id='5' width={'25px'} src={Sunblack} />
+                <img alt="" id='6' width={'25px'} src={Cloud} />
+                <img alt="" id='7' width={'25px'} src={Cloud} />
+                <img alt="" id='' width={'25px'} src={Sunblack} />
+            </Stack>
+            <Stack direction={'row'} style={{justifyContent:'space-evenly',marginBottom:'10px',marginTop:'25px'}}>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>27°</span>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>28°</span>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>28°</span>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>29°</span>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>30°</span>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>29°</span>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>29°</span>
+                <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>28°</span>
+            </Stack>
+            <Stack display="flex" marginLeft={'40px'} marginTop={'15px'}>
+                <Graph/>
+            </Stack>
         </Box>
     </div>
   )
