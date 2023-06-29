@@ -6,6 +6,7 @@ import Umbrella from '../assests/Umbrella.png';
 import Water from '../assests/Water.png';
 import Wind from '../assests/Wind.png';
 import Rain from '../assests/Rain.png';
+import HalfDoughnutChart from './Progressbar';
 import SunBG from '../assests/SunBG.png';
 
 const RightbottomCard = () => {
@@ -22,7 +23,7 @@ const RightbottomCard = () => {
                     </div>
 
                     <div class="data">
-                        <p style={{fontFamily:'arial'}}>82%<span style={{marginBottom:'0px',marginLeft:'5px',fontSize:'20px',fontWeight:'lighter',fontFamily:'sans-serif'}}>bad</span></p>
+                        <p style={{fontFamily:'fonty'}}>82%<span style={{marginBottom:'0px',marginLeft:'5px',fontSize:'20px',fontWeight:'lighter',fontFamily:'sans-serif'}}>bad</span></p>
                         <Stack direction={'row'} style={{justifyContent:'space-between',color:'#dcdcdc',fontWeight:'bold'}}>
                             <span>good</span>
                             <span>normal</span>
@@ -48,17 +49,8 @@ const RightbottomCard = () => {
                             Wind</p>
                         <img src={Wind} width={'30px'} style={{borderRadius:'5px'}}/>
                     </div>
-
-                    <div class="data">
-                        <p style={{fontFamily:'arial'}}>30°</p>
-                        <Stack direction={'row'} style={{justifyContent:'space-between',fontSize:'0.81em',color:'#dcdcdc',fontSize:'0.81em',fontWeight:'bold'}}>
-                            <span>0°</span>
-                            <span>25°</span>
-                            <span>50°</span>
-                        </Stack>
-                        <div class="range">
-                            <div class="fill"></div>
-                        </div>
+                    <div style={{width:'50%',marginTop:'-20px',marginBottom:'-200px',justifyContent:'Center',transform:'translate(50%,-2%)'}}>
+                        <HalfDoughnutChart/>
                     </div>
                 </div>
 
@@ -69,7 +61,7 @@ const RightbottomCard = () => {
                     </div>
 
                     <div class="data">
-                        <p style={{fontFamily:'arial'}}>1.4 cm</p>
+                        <p style={{fontFamily:'fonty'}}>1.4 cm</p>
                         <Stack direction={'row'} style={{justifyContent:'space-between',color:'#dcdcdc',fontSize:'0.81em',fontWeight:'bold'}}>
                             <span>0</span>
                             <span>10</span>
@@ -128,7 +120,7 @@ const RightbottomCard = () => {
                 </div>
 
                 <div class="data">
-                    <p style={{fontFamily:'arial'}}>30°</p>
+                    <p style={{fontFamily:'fonty'}}>4 <span style={{fontWeight:'lighter',fontSize:'18px'}}>medium</span></p>
                     <Stack direction={'row'} style={{marginTop:'0px',textAlign:'center',justifyContent:'space-between',color:'#dcdcdc',fontWeight:'bold'}}>
                         <span>0-2</span>
                         <span>3-5</span>
@@ -164,7 +156,7 @@ const RightbottomCard = () => {
                 </div>
 
                 <div class="data">
-                    <p style={{fontFamily:'arial'}}>30°</p>
+                    <p style={{fontFamily:'fonty'}}>30°</p>
                     <Stack direction={'row'} style={{justifyContent:'space-between',fontSize:'0.81em',color:'#dcdcdc',fontSize:'0.81em',fontWeight:'bold'}}>
                         <span>0°</span>
                         <span>25°</span>
@@ -183,7 +175,7 @@ const RightbottomCard = () => {
                 </div>
 
                 <div class="data">
-                    <p style={{fontFamily:'arial'}}>42%</p>
+                    <p style={{fontFamily:'fonty'}}>42%</p>
                     <Stack direction={'row'} style={{justifyContent:'space-between',color:'#dcdcdc',fontSize:'0.81em',fontWeight:'bold'}}>
                         <span>0%</span>
                         <span>25%</span>
