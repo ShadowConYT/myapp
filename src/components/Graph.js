@@ -27,7 +27,7 @@ class Graph extends Component {
   	    		return "";}
 				
 			},
-			height:100,
+			height:95,
 			width:925,
 			data: [
 			{

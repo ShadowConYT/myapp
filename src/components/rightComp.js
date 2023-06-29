@@ -20,7 +20,7 @@ const RightComp = () => {
                 <img width={'50px'} height={'50px'} style={{marginRight:'65px', borderRadius:'15px' }} src={Akaza} />
             </div>
         </div>
-        <Box style={{width:'90%',backgroundColor:'white',justifyContent:'center',alignItems:'center',margin:'20px 25px 20px 55px',borderRadius:'40px'}}>
+        <Box style={{width:'90%',backgroundColor:'white',justifyContent:'center',alignItems:'center',margin:'10px 25px 20px 55px',borderRadius:'40px'}}>
             <Stack id='statistics' direction={'row'} style={{width:'90%',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
                 <h1 style={{background:'none',fontSize:'1em',marginBottom:'0px',marginTop:'2%',marginLeft:'7%'}}>Upcoming Hours</h1>
                 <div style={{marginTop:'2%',marginLeft:'9%'}}>
