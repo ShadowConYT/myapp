@@ -11,17 +11,18 @@ import SunBG from '../assests/SunBG.png';
 const RightbottomCard = () => {
   return (
     <Box >
-        <Stack direction={'row'} style={{justifyContent:'space-evenly', margin:'20px 25px 20px 55px',width:'90%'}}>
+        <h1 style={{fontSize:'15px',textAlign:'left',marginLeft:'5%'}}>More Details of today's weather</h1>
+        <Stack direction={'row'} style={{justifyContent:'space-between', margin:'20px 25px 20px 55px',width:'90%'}}>
                 
                 <div className='card'>
-                    <div class="title">
+                    <div class="title" style={{display:'flex',justifyContent:'space-between'}}>
                         <p class="title-text">
                             Humidity</p>
-                        <img src={Water} width={'30px'} style={{borderRadius:'5px'}}/>
+                        <img src={Water} width={'30px'} style={{borderRadius:'5px',marginTop:'12px'}}/>
                     </div>
 
                     <div class="data">
-                        <p style={{fontFamily:'arial'}}>82%<span style={{marginLeft:'5px',fontSize:'20px',fontWeight:'lighter',fontFamily:'sans-serif'}}>bad</span></p>
+                        <p style={{fontFamily:'arial'}}>82%<span style={{marginBottom:'0px',marginLeft:'5px',fontSize:'20px',fontWeight:'lighter',fontFamily:'sans-serif'}}>bad</span></p>
                         <Stack direction={'row'} style={{justifyContent:'space-between',color:'#dcdcdc',fontWeight:'bold'}}>
                             <span>good</span>
                             <span>normal</span>
@@ -117,7 +118,7 @@ const RightbottomCard = () => {
                 </div>
         </Stack>
 
-        <Stack direction={'row'} style={{justifyContent:'space-evenly', margin:'20px 25px 20px 55px',width:'90%'}}>
+        <Stack direction={'row'} style={{justifyContent:'space-between', margin:'20px 25px 20px 55px',width:'90%'}}>
             
             <div className='card'>
                 <div class="title">
@@ -128,7 +129,7 @@ const RightbottomCard = () => {
 
                 <div class="data">
                     <p style={{fontFamily:'arial'}}>30°</p>
-                    <Stack direction={'row'} style={{textAlign:'center',justifyContent:'space-between',color:'#dcdcdc',fontWeight:'bold'}}>
+                    <Stack direction={'row'} style={{marginTop:'0px',textAlign:'center',justifyContent:'space-between',color:'#dcdcdc',fontWeight:'bold'}}>
                         <span>0-2</span>
                         <span>3-5</span>
                         <span>6-7</span>

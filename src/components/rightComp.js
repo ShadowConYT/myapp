@@ -20,7 +20,7 @@ const RightComp = () => {
                 <img width={'50px'} height={'50px'} style={{marginRight:'65px', borderRadius:'15px' }} src={Akaza} />
             </div>
         </div>
-        <Box style={{width:'90%',backgroundColor:'white',justifyContent:'center',alignItems:'center',margin:'10px 25px 20px 55px',borderRadius:'40px'}}>
+        <Box style={{width:'90%',backgroundColor:'white',justifyContent:'center',alignItems:'center',margin:'5px 25px 20px 55px',borderRadius:'40px'}}>
             <Stack id='statistics' direction={'row'} style={{width:'90%',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
                 <h1 style={{background:'none',fontSize:'1em',marginBottom:'0px',marginTop:'2%',marginLeft:'7%'}}>Upcoming Hours</h1>
                 <div style={{marginTop:'2%',marginLeft:'9%'}}>
@@ -35,7 +35,7 @@ const RightComp = () => {
                     </select>
                 </div>
             </Stack>
-            <Stack direction={'row'} style={{justifyContent:'space-evenly',marginBottom:'10px',marginTop:'25px'}}>
+            <Stack direction={'row'} style={{justifyContent:'space-evenly',marginBottom:'10px',marginTop:'10px'}}>
                 <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>Now</span>
                 <span style={{fontFamily:'arial',fontSize:'12px'}}>11:00</span>
                 <span style={{fontFamily:'arial',fontSize:'12px'}}>12:00</span>
@@ -45,17 +45,17 @@ const RightComp = () => {
                 <span style={{fontFamily:'arial',fontSize:'12px'}}>16:00</span>
                 <span style={{fontFamily:'arial',fontSize:'12px'}}>17:00</span>
             </Stack>
-            <Stack direction={'row'} style={{justifyContent:'space-evenly',}}>
-                <img alt="" id='1' width={'25px'} src={Sunblack} />
-                <img alt="" id='2' width={'25px'} src={Sunblack} />
-                <img alt="" id='3' width={'25px'} src={Cloud} />
-                <img alt="" id='4' width={'25px'} src={Cloud} />
-                <img alt="" id='5' width={'25px'} src={Sunblack} />
-                <img alt="" id='6' width={'25px'} src={Cloud} />
-                <img alt="" id='7' width={'25px'} src={Cloud} />
-                <img alt="" id='' width={'25px'} src={Sunblack} />
+            <Stack direction={'row'} style={{justifyContent:'space-evenly',top:'-5px',marginBottom:'0px'}}>
+                <img alt="" id='1' width={'20px'} src={Sunblack} />
+                <img alt="" id='2' width={'20px'} src={Sunblack} />
+                <img alt="" id='3' width={'20px'} src={Cloud} />
+                <img alt="" id='4' width={'20px'} src={Cloud} />
+                <img alt="" id='5' width={'20px'} src={Sunblack} />
+                <img alt="" id='6' width={'20px'} src={Cloud} />
+                <img alt="" id='7' width={'20px'} src={Cloud} />
+                <img alt="" id='' width={'20px'} src={Sunblack} />
             </Stack>
-            <Stack direction={'row'} style={{justifyContent:'space-evenly',marginBottom:'10px',marginTop:'25px'}}>
+            <Stack direction={'row'} style={{justifyContent:'space-evenly',marginBottom:'10px',marginTop:'2px',marginLeft:'2px'}}>
                 <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>27°</span>
                 <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>28°</span>
                 <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>28°</span>
@@ -65,7 +65,7 @@ const RightComp = () => {
                 <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>29°</span>
                 <span style={{fontWeight:'bold',fontFamily:'arial',fontSize:'12px'}}>28°</span>
             </Stack>
-            <Stack display="flex" marginLeft={'40px'} marginTop={'15px'}>
+            <Stack display="flex" marginLeft={'37px'} marginTop={'15px'}>
                 <Graph/>
             </Stack>
         </Box>

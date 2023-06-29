@@ -27,8 +27,8 @@ class Graph extends Component {
   	    		return "";}
 				
 			},
-			height:95,
-			width:925,
+			height:90,
+			width:930,
 			data: [
 			{
 				color:'#5c9ce5',
